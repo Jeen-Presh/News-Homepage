@@ -50,11 +50,10 @@
       <!-- Hamburger Menu -->
       <button
         type="menu"
-        class="hamburger z-50 cursor-pointer border-none bg-none md:hidden"
+        class="hamburger-open z-50 cursor-pointer border-none bg-none md:hidden"
       >
         <span class="sr-only">Hamburger button</span>
         <img src="img/icon-menu.svg" alt="" class="menu-icon" />
-        <img src="img/icon-menu-close.svg" alt="" class="close-icon hidden" />
       </button>
     </header>
 
@@ -62,6 +61,15 @@
     <nav
       class="mobile-menu fixed top-0 right-0 z-20 h-screen w-3/5 translate-x-full bg-white px-6 pt-40 transition duration-200"
     >
+      <button
+        type="menu"
+        class="hamburger-close fixed top-10 right-6 z-50 cursor-pointer border-none bg-none md:hidden"
+      >
+        <span class="sr-only">Hamburger button</span>
+
+        <img src="img/icon-menu-close.svg" alt="" class="close-icon" />
+      </button>
+
       <ul class="space-y-6">
         <li>
           <a class="duration-200 hover:text-Soft-orange" href="#">Home</a>

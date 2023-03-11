@@ -1,13 +1,19 @@
-const menuButton = document.querySelector(".hamburger");
-const menuIcon = document.querySelector(".menu-icon");
-const closeICon = document.querySelector(".close-icon");
+const openButton = document.querySelector(".hamburger-open");
+const closeButton = document.querySelector(".hamburger-close");
 const mobileMenu = document.querySelector(".mobile-menu");
 
 const toggleMenu = function () {
-  menuIcon.classList.toggle("hidden");
-  closeICon.classList.toggle("hidden");
+  openButton.classList.toggle("hidden");
+
   mobileMenu.classList.toggle("translate-x-full");
   mobileMenu.classList.toggle("shadow-cs");
 };
 
-menuButton.addEventListener("click", toggleMenu);
+const closeMenu = function () {
+  mobileMenu.classList.toggle("translate-x-full");
+  mobileMenu.classList.toggle("shadow-cs");
+  openButton.classList.toggle("hidden");
+};
+
+openButton.addEventListener("click", toggleMenu);
+closeButton.addEventListener("click", closeMenu);

@@ -543,6 +543,26 @@ body {
   top: 0px;
 }
 
+.right-3{
+  right: 0.75rem;
+}
+
+.top-6{
+  top: 1.5rem;
+}
+
+.right-6{
+  right: 1.5rem;
+}
+
+.top-8{
+  top: 2rem;
+}
+
+.top-10{
+  top: 2.5rem;
+}
+
 .z-20{
   z-index: 20;
 }
