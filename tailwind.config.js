@@ -12,6 +12,7 @@ module.exports = {
       "Dark-grayishblue": "hsl(236, 13%, 42%)",
       "Very-darkblue": "hsl(240, 100%, 5%)",
       white: "#fff",
+      gunmetal: "hsl(237, 13%, 42%, 1)",
     },
 
     fontFamily: {
@@ -35,6 +36,10 @@ module.exports = {
 
       boxShadow: {
         cs: "-10rem -0.5rem 0 20rem rgba(0, 0, 0, 0.5)",
+      },
+
+      backgroundColor: {
+        bgc: "rgba(0, 0, 0, 0.5)",
       },
     },
   },

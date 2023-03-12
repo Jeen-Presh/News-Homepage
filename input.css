@@ -9,3 +9,43 @@
     font-family: Inter, san-serif;
   }
 }
+
+@layer utilities {
+  .visually-hidden {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    margin: -1px !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+  }
+
+  .navlist[data-visible] {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+    background-color: #fffdfa;
+    transition: all 0.3s ease-in-out;
+    padding-top: 9rem;
+    padding-left: 1.5rem;
+    padding-right: 1.8rem;
+  }
+
+  .newAfter::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: #00001a;
+    opacity: 0.5;
+  }
+}

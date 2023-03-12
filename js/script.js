@@ -1,19 +1,17 @@
-const openButton = document.querySelector(".hamburger-open");
-const closeButton = document.querySelector(".hamburger-close");
-const mobileMenu = document.querySelector(".mobile-menu");
+const navButton = document.querySelector(".hamburger-open");
+const navList = document.querySelector(".navlist");
+const SodyOverlay = document.body;
+const openIcon = document.querySelector(".menu-icon");
+const closeIcon = document.querySelector(".close-icon");
+
+console.log(SodyOverlay);
 
 const toggleMenu = function () {
-  openButton.classList.toggle("hidden");
-
-  mobileMenu.classList.toggle("translate-x-full");
-  mobileMenu.classList.toggle("shadow-cs");
+  navList.hasAttribute("data-visible") ? navButton.setAttribute("aria-expanded", false) : navButton.setAttribute("aria-expanded", true);
+  openIcon.classList.toggle("hidden");
+  closeIcon.classList.toggle("hidden");
+  navList.toggleAttribute("data-visible");
+  SodyOverlay.classList.toggle("newAfter");
 };
 
-const closeMenu = function () {
-  mobileMenu.classList.toggle("translate-x-full");
-  mobileMenu.classList.toggle("shadow-cs");
-  openButton.classList.toggle("hidden");
-};
-
-openButton.addEventListener("click", toggleMenu);
-closeButton.addEventListener("click", closeMenu);
+navButton.addEventListener("click", toggleMenu);

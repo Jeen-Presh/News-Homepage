@@ -5,118 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css   " />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="img/favicon-32x32.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
     <title>Frontend Mentor | News homepage</title>
   </head>
   <body class="px-3">
     <!-- Header Section -->
-    <header
-      class="header mx-auto flex max-w-8xl items-center justify-between py-6"
-    >
+    <header class="header relative mx-auto flex max-w-8xl items-center justify-between py-6">
+      <!-- Heading -->
+      <h1 class="visually-hidden">News Hompepage</h1>
+
       <!-- News Homeage logo link -->
-      <a href="index.html" class="header__link"
-        ><span class="sr-only">News homepage</span
-        ><img src="img/logo.svg" alt="Home news link"
-      /></a>
+      <a href="index.html" class="header__link"><span class="sr-only">News homepage</span><img src="img/logo.svg" alt="Home news link" /></a>
 
       <!-- Navigation -->
-      <nav role="navigation">
-        <ul class="hidden md:flex md:space-x-6">
+      <nav role="navigation" class="relative">
+        <!-- Hamburger Button toggle -->
+        <button
+          aria-controls="navigation menu"
+          aria-expanded="false"
+          type="menu"
+          class="hamburger-open fixed top-9 right-5 z-50 cursor-pointer border-none bg-none md:hidden"
+        >
+          <span class="sr-only">Hamburger button</span>
+          <img src="img/icon-menu.svg" alt="" class="menu-icon" />
+          <img src="img/icon-menu-close.svg" alt="" class="close-icon hidden" />
+        </button>
+
+        <ul class="navlist hidden md:flex md:space-x-6" role="list">
           <li>
-            <a class="duration-200 hover:text-Soft-orange" href="#">Home</a>
+            <a class="text-Very-darkblue duration-200 hover:text-Soft-orange md:text-gunmetal" href="#">Home</a>
           </li>
           <li>
-            <a class="duration-200 hover:text-Soft-orange" href="#">New</a>
+            <a class="text-Very-darkblue duration-200 hover:text-Soft-orange md:text-gunmetal" href="#">New</a>
           </li>
           <li>
-            <a class="duration-200 hover:text-Soft-orange" href="#">Popular</a>
+            <a class="text-Very-darkblue duration-200 hover:text-Soft-orange md:text-gunmetal" href="#">Popular</a>
           </li>
           <li>
-            <a class="duration-200 hover:text-Soft-orange" href="#">Trending</a>
+            <a class="text-Very-darkblue duration-200 hover:text-Soft-orange md:text-gunmetal" href="#">Trending</a>
           </li>
           <li>
-            <a class="duration-200 hover:text-Soft-orange" href="#"
-              >Categories</a
-            >
+            <a class="text-Very-darkblue duration-200 hover:text-Soft-orange md:text-gunmetal" href="#">Categories</a>
           </li>
         </ul>
       </nav>
-
-      <!-- Hamburger Menu -->
-      <button
-        type="menu"
-        class="hamburger-open z-50 cursor-pointer border-none bg-none md:hidden"
-      >
-        <span class="sr-only">Hamburger button</span>
-        <img src="img/icon-menu.svg" alt="" class="menu-icon" />
-      </button>
     </header>
-
-    <!-- Mobile Menu -->
-    <nav
-      class="mobile-menu fixed top-0 right-0 z-20 h-screen w-3/5 translate-x-full bg-white px-6 pt-40 transition duration-200"
-    >
-      <button
-        type="menu"
-        class="hamburger-close fixed top-10 right-6 z-50 cursor-pointer border-none bg-none md:hidden"
-      >
-        <span class="sr-only">Hamburger button</span>
-
-        <img src="img/icon-menu-close.svg" alt="" class="close-icon" />
-      </button>
-
-      <ul class="space-y-6">
-        <li>
-          <a class="duration-200 hover:text-Soft-orange" href="#">Home</a>
-        </li>
-        <li>
-          <a class="duration-200 hover:text-Soft-orange" href="#">New</a>
-        </li>
-        <li>
-          <a class="duration-200 hover:text-Soft-orange" href="#">Popular</a>
-        </li>
-        <li>
-          <a class="duration-200 hover:text-Soft-orange" href="#">Trending</a>
-        </li>
-        <li>
-          <a class="duration-200 hover:text-Soft-orange" href="#">Categories</a>
-        </li>
-      </ul>
-    </nav>
 
     <main>
       <!-- Hero and aside section -->
-      <section
-        class="mx-auto grid max-w-8xl gap-y-4 py-8 lg:grid-cols-3 lg:gap-x-6"
-      >
+      <section class="mx-auto grid max-w-8xl gap-y-4 py-8 lg:grid-cols-3 lg:gap-x-6">
         <div class="lg:col-span-2 lg:space-y-8">
+          <h2 class="visually-hidden">Featured Section</h2>
           <picture>
-            <source
-              media="(min-width:48rem )"
-              srcset="img/image-web-3-desktop.jpg"
-            />
+            <source media="(min-width:48rem )" srcset="img/image-web-3-desktop.jpg" />
             <img src="img/image-web-3-mobile.jpg" alt="" class="w-full" />
           </picture>
 
-          <div
-            class="mt-6 grid space-y-4 sm:text-center lg:mt-0 lg:grid-cols-2 lg:gap-x-4 lg:space-y-0 lg:text-left"
-          >
-            <h1
-              class="max-w-xs text-4xl font-extrabold text-Very-darkblue sm:mx-auto lg:mx-0 lg:text-5xl"
-            >
-              The Bright Future of Web 3.0?
-            </h1>
+          <article class="mt-6 grid space-y-4 sm:text-center lg:mt-0 lg:grid-cols-2 lg:gap-x-4 lg:space-y-0 lg:text-left">
+            <h3 class="max-w-xs text-4xl font-extrabold text-Very-darkblue sm:mx-auto lg:mx-0 lg:text-5xl">The Bright Future of Web 3.0?</h3>
 
             <div class="space-y-6 sm:mx-auto lg:mx-0">
               <p class="max-w-sm text-Dark-grayishblue">
-                We dive into the next evolution of the web that claims to put
-                the power of the platforms back into the hands of the people.
-                But is it really fulfilling its promise?
+                We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it
+                really fulfilling its promise?
               </p>
               <a
                 href="#"
@@ -124,117 +75,80 @@
                 >Read More</a
               >
             </div>
-          </div>
+          </article>
         </div>
 
         <!-- Aside Section -->
         <aside class="mt-6 bg-Very-darkblue py-8 px-8 text-white md:mt-0">
-          <section>
-            <h2 class="text-3xl font-semibold text-Soft-orange">New</h2>
-            <article class="border-b border-Dark-grayishblue pt-8">
-              <a
-                href="#"
-                class="text-xl font-semibold transition duration-200 hover:text-Soft-orange"
-                >Hydrogen VS Electric Cars</a
-              >
-              <p class="mt-2 pb-8 text-Dark-grayishblue">
-                Will hydrogen-fueled cars ever catch up to EVs?
-              </p>
-            </article>
-            <article class="border-b border-Dark-grayishblue pt-8">
-              <a
-                href="#"
-                class="text-xl font-semibold transition duration-200 hover:text-Soft-orange"
-                >The Downsides of AI Artistry</a
-              >
-              <p class="mt-2 pb-8 text-Dark-grayishblue">
-                What are the possible adverse effects of on-demand AI image
-                generation?
-              </p>
-            </article>
-            <article class="pt-8">
-              <a
-                href="#"
-                class="text-xl font-semibold transition duration-200 hover:text-Soft-orange"
-                >Is VC Funding Drying Up?</a
-              >
-              <p class="mt-2 pb-8 text-Dark-grayishblue">
-                Private funding by VC firms is down 50% YOY. We take a look at
-                what that means.
-              </p>
-            </article>
-          </section>
+          <h2 class="text-3xl font-semibold text-Soft-orange">New</h2>
+          <ul>
+            <li>
+              <article class="border-b border-Dark-grayishblue pt-8">
+                <h4><a href="#" class="text-xl font-semibold transition duration-200 hover:text-Soft-orange">Hydrogen VS Electric Cars</a></h4>
+                <p class="mt-2 pb-8 text-Dark-grayishblue">Will hydrogen-fueled cars ever catch up to EVs?</p>
+              </article>
+            </li>
+            <li>
+              <article class="border-b border-Dark-grayishblue pt-8">
+                <h4><a href="#" class="text-xl font-semibold transition duration-200 hover:text-Soft-orange">The Downsides of AI Artistry</a></h4>
+                <p class="mt-2 pb-8 text-Dark-grayishblue">What are the possible adverse effects of on-demand AI image generation?</p>
+              </article>
+            </li>
+            <li>
+              <article class="pt-8">
+                <h4><a href="#" class="text-xl font-semibold transition duration-200 hover:text-Soft-orange">Is VC Funding Drying Up?</a></h4>
+                <p class="mt-2 pb-8 text-Dark-grayishblue">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+              </article>
+            </li>
+          </ul>
         </aside>
       </section>
 
-      <!-- Article Section -->
-      <section
-        class="mx-auto grid max-w-8xl gap-y-4 pb-20 md:mt-8 md:grid-cols-2 md:gap-y-8 md:gap-x-4 lg:grid-cols-3 lg:gap-x-6"
-      >
-        <article class="flex space-x-4">
-          <img
-            src="img/image-retro-pcs.jpg"
-            class="h-full w-28 object-cover"
-            alt=""
-          />
-          <div class="flex flex-col flex-wrap space-y-3 md:flex-nowrap">
-            <h3 class="text-4xl font-semibold text-Grayish-blue">01</h3>
-            <a
-              href="#"
-              class="text-xl font-extrabold text-Very-darkblue transition-all duration-200 hover:text-Soft-red"
-              >Reviving Retro PCs</a
-            >
-            <p class="text-Dark-grayishblue">
-              What happens when old PCs are given modern upgrades?
-            </p>
-          </div>
-        </article>
+      <!-- Popular Blog Post Section -->
+      <section>
+        <ol class="mx-auto grid max-w-8xl gap-y-4 pb-20 md:mt-8 md:grid-cols-2 md:gap-y-8 md:gap-x-4 lg:grid-cols-3 lg:gap-x-6">
+          <h2 class="visually-hidden">Popular Blog posts</h2>
+          <li class="flex space-x-4">
+            <img src="img/image-retro-pcs.jpg" class="h-full w-28 object-cover" alt="" />
+            <article class="flex flex-col flex-wrap space-y-3 md:flex-nowrap">
+              <span class="text-4xl font-semibold text-Grayish-blue">01</span>
+              <h5>
+                <a href="#" class="text-xl font-extrabold text-Very-darkblue transition-all duration-200 hover:text-Soft-red">Reviving Retro PCs</a>
+              </h5>
+              <p class="text-Dark-grayishblue">What happens when old PCs are given modern upgrades?</p>
+            </article>
+          </li>
 
-        <article class="flex space-x-4">
-          <img
-            src="img/image-top-laptops.jpg"
-            class="h-full w-28 object-cover"
-            alt=""
-          />
-          <div class="flex flex-col flex-wrap space-y-3">
-            <h3 class="text-4xl font-semibold text-Grayish-blue">02</h3>
-            <a
-              href="#"
-              class="text-xl font-extrabold text-Very-darkblue transition duration-200 hover:text-Soft-red"
-              >Top 10 Laptops of 2022</a
-            >
-            <p class="text-Dark-grayishblue">
-              Our best picks for various needs and budgets.
-            </p>
-          </div>
-        </article>
+          <li class="flex space-x-4">
+            <img src="img/image-top-laptops.jpg" class="h-full w-28 object-cover" alt="" />
+            <article class="flex flex-col flex-wrap space-y-3">
+              <span class="text-4xl font-semibold text-Grayish-blue">02</span>
+              <h5>
+                <a href="#" class="text-xl font-extrabold text-Very-darkblue transition duration-200 hover:text-Soft-red">Top 10 Laptops of 2022</a>
+              </h5>
+              <p class="text-Dark-grayishblue">Our best picks for various needs and budgets.</p>
+            </article>
+          </li>
 
-        <article class="flex space-x-4">
-          <img
-            src="img/image-gaming-growth.jpg"
-            class="h-full w-28 object-cover"
-            alt=""
-          />
-          <div class="flex flex-col flex-wrap space-y-3">
-            <h3 class="text-4xl font-semibold text-Grayish-blue">03</h3>
-            <a
-              href="#"
-              class="text-xl font-extrabold text-Very-darkblue transition duration-200 hover:text-Soft-red"
-              >The Growth of Gaming</a
-            >
-            <p class="text-Dark-grayishblue">
-              How the pandemic has sparked fresh opportunities.
-            </p>
-          </div>
-        </article>
+          <li class="flex space-x-4">
+            <img src="img/image-gaming-growth.jpg" class="h-full w-28 object-cover" alt="" />
+            <article class="flex flex-col flex-wrap space-y-3">
+              <span class="text-4xl font-semibold text-Grayish-blue">03</span>
+              <h5>
+                <a href="#" class="text-xl font-extrabold text-Very-darkblue transition duration-200 hover:text-Soft-red">The Growth of Gaming</a>
+              </h5>
+              <p class="text-Dark-grayishblue">How the pandemic has sparked fresh opportunities.</p>
+            </article>
+          </li>
+        </ol>
       </section>
     </main>
+    <!-- Footer Section -->
     <footer class="mx-auto max-w-8xl text-center">
       <div class="attribution">
         Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#" class="text-Soft-red">Jeen-Presh</a>.
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+        <a href="#" class="text-Soft-red">Jeen-Presh</a>.
       </div>
     </footer>
 
