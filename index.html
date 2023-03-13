@@ -18,10 +18,10 @@
       <a href="index.html" class="header__link"><span class="sr-only">News homepage</span><img src="img/logo.svg" alt="Home news link" /></a>
 
       <!-- Navigation -->
-      <nav role="navigation" class="relative">
+      <nav class="relative">
         <!-- Hamburger Button toggle -->
         <button
-          aria-controls="navigation menu"
+          aria-controls="navigation-menu"
           aria-expanded="false"
           type="button"
           class="hamburger-open relative top-2 right-1 z-50 cursor-pointer border-none bg-none md:hidden"
@@ -31,7 +31,7 @@
           <img src="img/icon-menu-close.svg" alt="" class="close-icon hidden" />
         </button>
 
-        <ul class="navlist hidden overflow-auto md:flex md:space-x-6" role="list">
+        <ul class="navlist id hidden overflow-auto md:flex md:space-x-6" id="navigation-menu">
           <li>
             <a class="text-Very-darkblue duration-200 hover:text-Soft-orange md:text-gunmetal" href="#">Home</a>
           </li>
@@ -81,7 +81,7 @@
         <!-- Aside Section -->
         <aside class="mt-6 bg-Very-darkblue py-8 px-8 text-white md:mt-0" id="new">
           <h2 class="text-3xl font-semibold text-Soft-orange">New</h2>
-          <ul role="list">
+          <ul>
             <li>
               <article class="border-b border-Dark-grayishblue pt-8">
                 <h4><a href="#" class="text-xl font-semibold transition duration-200 hover:text-Soft-orange">Hydrogen VS Electric Cars</a></h4>
@@ -106,8 +106,8 @@
 
       <!-- Popular Blog Post Section -->
       <section id="popular">
-        <ol class="mx-auto grid max-w-8xl gap-y-4 pb-20 md:mt-8 md:grid-cols-2 md:gap-y-8 md:gap-x-4 lg:grid-cols-3 lg:gap-x-6" role="list">
-          <h2 class="visually-hidden">Popular Blog posts</h2>
+        <h2 class="visually-hidden">Popular Blog posts</h2>
+        <ol class="mx-auto grid max-w-8xl gap-y-4 pb-20 md:mt-8 md:grid-cols-2 md:gap-y-8 md:gap-x-4 lg:grid-cols-3 lg:gap-x-6">
           <li class="flex space-x-4">
             <img src="img/image-retro-pcs.jpg" class="h-full w-28 object-cover" alt="" />
             <article class="flex flex-col flex-wrap space-y-3 md:flex-nowrap">
