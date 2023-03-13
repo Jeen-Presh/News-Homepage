@@ -660,6 +660,10 @@ body {
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
+.overflow-auto{
+  overflow: auto;
+}
+
 .border-b{
   border-bottom-width: 1px;
 }
@@ -844,6 +848,7 @@ body {
   padding-top: 9rem;
   padding-left: 1.5rem;
   padding-right: 1.8rem;
+  padding-bottom: 4rem;
   z-index: 2;
 }
 
@@ -853,6 +858,10 @@ body {
   inset: 0;
   background: #00001a;
   opacity: 0.5;
+}
+
+.overflow-hide {
+  overflow: hidden;
 }
 
 .hover\:bg-Very-darkblue:hover{
