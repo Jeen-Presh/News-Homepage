@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: []()
-- Live Site URL: [https://teal-starlight-2d768a.netlify.app/](News Homepage)
+- Solution URL: [FrontEnd Mentor](https://www.frontendmentor.io/solutions/news-homepage-using-tailwindcss-Ffn_FuvsbH)
+- Live Site URL: [News Homepage](https://teal-starlight-2d768a.netlify.app/)
 
 ## My process
 
