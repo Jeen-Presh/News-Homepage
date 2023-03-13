@@ -11,7 +11,6 @@ const toggleMenu = function () {
   openIcon.classList.toggle("hidden");
   closeIcon.classList.toggle("hidden");
   navList.toggleAttribute("data-visible");
-  SodyOverlay.classList.toggle("overflow-hide");
   SodyOverlay.classList.toggle("newAfter");
 };
 

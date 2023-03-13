@@ -23,8 +23,8 @@
         <button
           aria-controls="navigation menu"
           aria-expanded="false"
-          type="menu"
-          class="hamburger-open relative top-2 right-1 z-50 cursor-pointer border-none bg-none md:hidden"
+          type="button"
+          class="hamburger-open fixed top-10 right-3 z-50 cursor-pointer border-none bg-none md:hidden"
         >
           <span class="sr-only">Hamburger button</span>
           <img src="img/icon-menu.svg" alt="" class="menu-icon" />
@@ -36,10 +36,10 @@
             <a class="text-Very-darkblue duration-200 hover:text-Soft-orange md:text-gunmetal" href="#">Home</a>
           </li>
           <li>
-            <a class="text-Very-darkblue duration-200 hover:text-Soft-orange md:text-gunmetal" href="#">New</a>
+            <a class="text-Very-darkblue duration-200 hover:text-Soft-orange md:text-gunmetal" href="#new">New</a>
           </li>
           <li>
-            <a class="text-Very-darkblue duration-200 hover:text-Soft-orange md:text-gunmetal" href="#">Popular</a>
+            <a class="text-Very-darkblue duration-200 hover:text-Soft-orange md:text-gunmetal" href="#popular">Popular</a>
           </li>
           <li>
             <a class="text-Very-darkblue duration-200 hover:text-Soft-orange md:text-gunmetal" href="#">Trending</a>
@@ -79,9 +79,9 @@
         </div>
 
         <!-- Aside Section -->
-        <aside class="mt-6 bg-Very-darkblue py-8 px-8 text-white md:mt-0">
+        <aside class="mt-6 bg-Very-darkblue py-8 px-8 text-white md:mt-0" id="new">
           <h2 class="text-3xl font-semibold text-Soft-orange">New</h2>
-          <ul>
+          <ul role="list">
             <li>
               <article class="border-b border-Dark-grayishblue pt-8">
                 <h4><a href="#" class="text-xl font-semibold transition duration-200 hover:text-Soft-orange">Hydrogen VS Electric Cars</a></h4>
@@ -105,8 +105,8 @@
       </section>
 
       <!-- Popular Blog Post Section -->
-      <section>
-        <ol class="mx-auto grid max-w-8xl gap-y-4 pb-20 md:mt-8 md:grid-cols-2 md:gap-y-8 md:gap-x-4 lg:grid-cols-3 lg:gap-x-6">
+      <section id="popular">
+        <ol class="mx-auto grid max-w-8xl gap-y-4 pb-20 md:mt-8 md:grid-cols-2 md:gap-y-8 md:gap-x-4 lg:grid-cols-3 lg:gap-x-6" role="list">
           <h2 class="visually-hidden">Popular Blog posts</h2>
           <li class="flex space-x-4">
             <img src="img/image-retro-pcs.jpg" class="h-full w-28 object-cover" alt="" />
@@ -143,6 +143,7 @@
         </ol>
       </section>
     </main>
+
     <!-- Footer Section -->
     <footer class="mx-auto max-w-8xl text-center">
       <div class="attribution">
