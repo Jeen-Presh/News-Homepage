@@ -551,6 +551,22 @@ body {
   top: 2.5rem;
 }
 
+.top-5{
+  top: 1.25rem;
+}
+
+.right-1{
+  right: 0.25rem;
+}
+
+.top-3{
+  top: 0.75rem;
+}
+
+.top-2{
+  top: 0.5rem;
+}
+
 .z-50{
   z-index: 50;
 }
